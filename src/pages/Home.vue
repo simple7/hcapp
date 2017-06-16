@@ -17,8 +17,3 @@
   }
 </script>
 
-<style lang="scss">
-.app-main-box{
-  padding-top: 80px;
-}
-</style>

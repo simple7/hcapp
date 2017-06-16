@@ -2,7 +2,6 @@
   <div>
     <carousel></carousel>
     <index-card></index-card>
-    <index-card></index-card>
   </div>
 </template>
 <script>

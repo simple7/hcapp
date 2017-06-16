@@ -15,9 +15,11 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../style/common";
   .header {
-    height: 80px;
-    background-color: #1c2438;
+    font-family: tahoma,Arial,simhei,"Microsoft YaHei",SourceHanSans,Verdana,Geneva,sans-serif;
+    height: $head-height;
+    background-color: $head-bkg;
     color: #fff;
     top: 0;
     left: 0;
@@ -25,20 +27,20 @@
     z-index: 99;
     position: fixed;
     .title {
-      line-height: 80px;
+      line-height: $head-height;
       margin: 0;
       float: left;
-      font-size: 3em;
-      font-weight: 400;
+      font-size: 1.8em;
     }
     .container{
       position: relative;
     }
   }
-
-  @media screen and (max-width: 768px) {
-    .title{
-      display: none;
-    }
+@media screen and (max-width: 768px){
+  .container{
+    padding:0 20px;
+    border-bottom: 2px solid $head-bottom-border;
   }
+}
+
 </style>

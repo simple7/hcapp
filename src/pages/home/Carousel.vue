@@ -2,12 +2,12 @@
     <Carousel class="app-carousel" autoplay v-model="value" :autoplay-speed="autoplaySpeed">
       <Carousel-item>
         <div class="demo-carousel">
-          <img src="../../assets/test.gif" alt="">
+          <img src="../../assets/img/test.gif" alt="">
         </div>
       </Carousel-item>
       <Carousel-item>
         <div class="demo-carousel">
-          <img src="../../assets/test.gif" alt="">
+          <img src="../../assets/img/test.gif" alt="">
         </div>
       </Carousel-item>
     </Carousel>
@@ -23,22 +23,23 @@
   }
 </script>
 
-<style scoped="">
+<style lang="scss" scoped>
+  @import '../../style/common';
   .app-carousel{
     width: 100%;
-    height: 520px !important;
+    height: $pc-carousel !important;
   }
   .demo-carousel img{
     width:100%;
-    height: 520px;
+    height: $pc-carousel;
   }
   @media screen and (max-width: 768px){
     .app-carousel{
-      height: 300px !important;
+      height: $mobile-carousel !important;
     }
     .demo-carousel img{
       width:100%;
-      height: 300px;
+      height: $mobile-carousel;
     }
   }
 </style>
