@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="display: inline">
     <div class="top-menu">
       <Menu ref="menu" mode="horizontal" theme="dark" :active-name="activeName" :open-names="openNames"
             @on-select="handleSelect">
@@ -22,7 +22,7 @@
             @on-select="smallSelect">
         <Submenu ref="smallSub" name="1">
           <template slot="title">
-            <Icon type="navicon" color="#fff" size="36"></Icon>
+            <Icon type="navicon" color="#fff" size="30"></Icon>
           </template>
             <Menu-item name="index">首页</Menu-item>
             <Menu-item name="hello">更多</Menu-item>
@@ -91,8 +91,8 @@
     }
   }
 
-  .ivu-menu-item, .ivu-menu-submenu {
-    font-size: 1.2em;
+  .ivu-menu-item{
+    font-size: 1.1em;
   }
 
   @media screen and (max-width: 768px) {

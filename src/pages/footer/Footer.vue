@@ -1,5 +1,5 @@
 <template>
-  <footer class="app-foot">
+  <footer class="container app-foot">
 
   </footer>
 </template>
@@ -14,11 +14,7 @@
 </script>
 <style>
   .app-foot {
-    height: 150px;
-    background-color: #1c2438;
-    color: #fff;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    height: 100px;
+    border-top:  1px solid #eee;
   }
 </style>

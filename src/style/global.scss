@@ -39,6 +39,12 @@ a{
     display: none;
   }
 }
-.app-main-box{
-  padding-top: $head-height;
+.my-clearfix:after {
+  content: " ";
+  display: block !important;
+  clear: both;
+  height: 0;
+}
+.my-clearfix {
+  zoom: 1;
 }
